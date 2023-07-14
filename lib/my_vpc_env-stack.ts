@@ -5,6 +5,9 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 
 
 //Create a VPC that I will keep around and create a ec2 server that I can attach to.
+//Go to EKS console and create a key by selecting key pair on left side and then creating a new
+//key.  call it ec2-key-pair.  Choose pem.  Store it.  If you want to SSH into the EC2 server go ahead and 
+//get the key.
 
 export class MyVpcEnvStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
